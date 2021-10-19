@@ -7,20 +7,12 @@ function fizzbuzz() {
 /**** Dont change the code above ****/
 
 //write your code here
-
-while (count <= 100) {
-if (count % 3 === 0 && count % 5 ===0){
-output.push("Fizzbuzz");
-}else if ( count % 3 ===0){
- 	output.push("fizz");
-}else if (count % 5 ===0) {
- 	output.push("buzz");
-}else {
- output.push(count);
+for (var i=1; i < 101; i++){
+    if (i % 3 == 0 && i % 5 ===0) console.log("FizzBuzz");
+    else if (i % 3 == 0) console.log("Fizz");
+    else if (i % 5 == 0) console.log("Buzz");
+    else console.log(i);
 }
-count++;
-}
-console.log(output);
 /**** Dont change the code below ****/
 }
 
